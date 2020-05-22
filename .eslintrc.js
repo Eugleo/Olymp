@@ -1,23 +1,15 @@
 module.exports = {
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "react-app",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended",
+    'eslint:recommended',
+    'react-app',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'prettier/@typescript-eslint',
+    'plugin:prettier/recommended',
   ],
-  plugins: ["@typescript-eslint", "react"],
+  plugins: ['@typescript-eslint', 'react'],
   rules: {
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        js: "never",
-        jsx: "never",
-        ts: "never",
-        tsx: "never",
-      },
-    ],
+    '@typescript-eslint/explicit-function-return-type': 0,
   },
 };
