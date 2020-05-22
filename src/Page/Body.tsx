@@ -7,35 +7,21 @@ import contestHeader from '../assets/contest-header.svg';
 import faq from '../assets/faq.svg';
 import quickQuestions from '../assets/quick-questions.svg';
 import reviews from '../assets/reviews.svg';
-import olymp from '../assets/olymp.svg';
 import notification from '../assets/notification.svg';
 import recommendations from '../assets/recommendations.svg';
 
 import Title from '../Section/Title';
+import EmailField from './EmailForm';
 
 export default function Body() {
   return (
     <div className="flex flex-col items-stretch w-full">
-      <Section bg="gold">
-        <Image source={olymp} />
-        <div className="mx-12" />
-        <div>
-          <Title text="Nástěnky + mail + Google = Olymp" />
-          <Paragraph>
-            Dejte sbohem složitému prohledávání dokumentů z MŠMT, každodennímu prohlížení školních
-            nástěnek a desítkám reklamních mailů od organizátorů!
-          </Paragraph>
-          <Paragraph>
-            V Olympu jsou soutěže obarvené podle předmětu, kterého se nejvíce týkají. Soutěže lze
-            samozřejmě třídit nejen podle předmětu, ale například také podle hodnocení účastníků,
-            věkové kategorie, nebo bodů excelence.
-          </Paragraph>
-          <Paragraph>
-            To spolu s dalšími funkcemi Olympu ulehčuje studentům i učitelům objevování nových
-            soutěží.
-          </Paragraph>
-        </div>
-      </Section>
+      <div className="w-full bg-gold flex items-center py-40">
+        <EmailField
+          title="Chcete se jako první dozvídat novinky o Olympu?"
+          description="Dáme vám vědět, až bude Olymp připravený."
+        />
+      </div>
 
       <Section bg="bg-rosewood">
         <div>

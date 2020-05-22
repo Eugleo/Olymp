@@ -1,30 +1,66 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
+import olymp from '../assets/olymp.svg';
+import Section from '../Section/Section';
+import Title from '../Section/Title';
+import Paragraph from '../Section/Paragraph';
+import Image from '../Section/Image';
+
+import overview from '../assets/overview.svg';
 
 export default function Header() {
   return (
-    <div>
-      <div
-        style={{ backgroundColor: '#BBD8B3' }}
-        className="w-full h-16 flex flex-row justify-start items-center px-8 py-4"
-      >
-        <img src={logo} className="h-full"></img>
+    <div
+      style={{
+        backgroundImage: `url('${olymp}')`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPositionX: '75%',
+      }}
+    >
+      <div className="w-full h-24 flex flex-row justify-start items-center px-8">
+        <div className="h-full">
+          <img src={logo} />
+        </div>
         <span className="flex-grow" />
-        <a className="text-lg mr-10">Autor</a>
-        <a className="text-lg">Kontakt</a>
+        <a className="text-lg mr-10 tracking-wide" href="https://evzen.dev">
+          Autor
+        </a>
+        <a className="text-lg tracking-wider">Kontakt</a>
       </div>
-      <div
-        style={{ backgroundColor: '#BBD8B3' }}
-        className="bg-yellow-300 h-screen flex flex-col justify-center p-32"
-      >
+
+      <div className="flex flex-col h-screen mt-32 p-32">
         <div className="w-1/2">
-          <h1 className="text-4xl mb-4">Soutěže, přehledně</h1>
-          <h2 className="text-xl">
+          <h1 className="text-5xl mb-4 font-extrabold tracking-wide" style={{ color: '#214200' }}>
+            Soutěže, přehledně
+          </h1>
+          <h2 className="text-xl" style={{ color: '#3E7700' }}>
             Olymp je koncept stránky, která má za cíl přivést více studentů středních škol k
             soutěžím. Studentům pomáhá soutěže objevovat, učitelům organizovat.
           </h2>
         </div>
       </div>
+
+      <Section bg="gold">
+        <Image source={overview} />
+        <div className="mx-12" />
+        <div>
+          <Title text="Nástěnky + mail + Google = Olymp" />
+          <Paragraph>
+            Dejte sbohem složitému prohledávání dokumentů z MŠMT, každodennímu prohlížení školních
+            nástěnek a desítkám reklamních mailů od organizátorů!
+          </Paragraph>
+          <Paragraph>
+            V Olympu jsou soutěže obarvené podle předmětu, kterého se nejvíce týkají. Soutěže lze
+            samozřejmě třídit nejen podle předmětu, ale například také podle hodnocení účastníků,
+            věkové kategorie, nebo bodů excelence.
+          </Paragraph>
+          <Paragraph>
+            To spolu s dalšími funkcemi Olympu ulehčuje studentům i učitelům objevování nových
+            soutěží.
+          </Paragraph>
+        </div>
+      </Section>
     </div>
   );
 }
