@@ -1,5 +1,4 @@
 import React from 'react';
-import c from 'classnames';
 
 import olymp from '../assets/olymp-footer.svg';
 

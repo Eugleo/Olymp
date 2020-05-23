@@ -44,6 +44,7 @@ export default function Header() {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPositionX: '75%',
+        WebkitTransform: 'translate3d(0,0,0)',
       }}
       className="pb-32"
     >
