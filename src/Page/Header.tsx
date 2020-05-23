@@ -14,7 +14,7 @@ function Statusbar() {
     <div className="w-full py-5 px-4 md:px-16 xl:px-32">
       <div className="flex flex-row justify-start items-center h-12">
         <div className="h-full">
-          <img className="h-full" src={logo} />
+          <img className="h-full" src={logo} alt="Logo Olympu" />
         </div>
         <span className="flex-grow" />
         <a
@@ -69,7 +69,7 @@ export default function Header() {
       </div>
 
       <Section bgColor="bg-transparent" bgSrc="" bgPosition={{ x: '100%', y: '100%' }}>
-        <Image source={overview} />
+        <Image source={overview} alt="Elegantní seznam soutěží v Olympu" />
         <div className="mx-12" />
         <div>
           <Title text="Nástěnky + mail + Google = Olymp" />

@@ -57,11 +57,11 @@ export default function Body() {
           </Paragraph>
         </div>
         <div className="mx-12" />
-        <Image source={contestHeader}></Image>
+        <Image source={contestHeader} alt=""></Image>
       </Section>
 
       <Section bgColor="bg-gold" bgSrc={inspirer} bgPosition={{ x: '90%', y: 'calc(100% + 35px)' }}>
-        <Image source={recommendations} />
+        <Image source={recommendations} alt="Automatická doporučení podobných soutěží" />
         <div className="mx-12" />
         <div>
           <Title text="Nechte se inspirovat" />
@@ -87,7 +87,7 @@ export default function Body() {
           </Paragraph>
         </div>
         <div className="mx-12" />
-        <Image source={reviews} />
+        <Image source={reviews} alt="Recenze účastníků soutěží v Olympu" />
       </Section>
 
       <div>
@@ -97,7 +97,7 @@ export default function Body() {
           bgSrc={notifier}
           bgPosition={{ x: '100%', y: 'calc(100% + 35px)' }}
         >
-          <Image source={notification} />
+          <Image source={notification} alt="Upozornění na blížící se termín soutěže" />
           <div className="mx-12" />
           <div>
             <Title text="Termíny pod kontrolou" color="text-white" />
@@ -123,7 +123,7 @@ export default function Body() {
           </Paragraph>
         </div>
         <div className="mx-12" />
-        <Image source={faq} />
+        <Image source={faq} alt="Seznam FAQ v Olympu" />
       </Section>
 
       <Section
@@ -131,7 +131,10 @@ export default function Body() {
         bgSrc={angrer}
         bgPosition={{ x: '100%', y: 'calc(100% + 35px)' }}
       >
-        <Image source={quickQuestions} />
+        <Image
+          source={quickQuestions}
+          alt="Okno se zatrhnutelnými předpřipravenými otázkami, které lze odeslat organizátorům"
+        />
         <div className="mx-12" />
         <div>
           <Title text="...nebo nevíme?" />
