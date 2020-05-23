@@ -59,8 +59,7 @@ export default function Header() {
             soutěžím. Studentům pomáhá soutěže objevovat, učitelům organizovat.
           </h2>
           <button
-            style={{ backgroundColor: '#5F8427' }}
-            className="text-white text-lg tracking-wider font-medium shadow-lg py-4 px-6 w-full rounded-md hover:shadow-xs transition-all ease-in duration-100 sm:max-w-xs"
+            className="text-white text-lg bg-green-800 tracking-wider font-medium shadow-lg py-4 px-6 w-full rounded-md hover:shadow-xs transition-all ease-in duration-100 sm:max-w-xs"
             onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
           >
             Chci být u toho!
