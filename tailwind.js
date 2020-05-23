@@ -16,6 +16,9 @@ module.exports = {
         rosewood: {
           default: '#A71D31',
         },
+        forest: {
+          default: '#B2D7BC',
+        },
       },
     },
     screens: {

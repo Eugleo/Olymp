@@ -8,11 +8,19 @@ export enum Skew {
 }
 
 export default function Section({
-  bg,
+  bgColor,
+  bgSrc,
+  bgPosition: { x, y },
   children,
   hFull = true,
   skew = Skew.right,
-}: React.PropsWithChildren<{ bg: string; hFull?: boolean; skew?: Skew }>) {
+}: React.PropsWithChildren<{
+  bgColor: string;
+  bgPosition: { x: string; y: string };
+  bgSrc: string;
+  hFull?: boolean;
+  skew?: Skew;
+}>) {
   const [trans, unTrans] =
     skew === Skew.none
       ? ['', '']
@@ -22,13 +30,20 @@ export default function Section({
 
   return (
     <div
-      style={{ transform: trans }}
+      style={{
+        transform: trans,
+        backgroundImage: `url('${bgSrc}')`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPositionX: x,
+        backgroundPositionY: y,
+        backgroundSize: '200px 200px',
+      }}
       className={c(
         'px-32',
         hFull ? 'py-16' : 'py-32',
         hFull ? 'min-h-screen-3/4' : 'h-auto',
         'w-full',
-        bg,
+        bgColor,
         'flex flex-col justify-center',
       )}
     >

@@ -1,5 +1,4 @@
 import React from 'react';
-import c from 'classnames';
 
 import logo from '../assets/logo.svg';
 import olymp from '../assets/olymp.svg';
@@ -10,18 +9,6 @@ import Image from '../Section/Image';
 
 import overview from '../assets/overview.svg';
 
-function StatusLink({ title, to, className }: { title: string; to: string; className?: string }) {
-  return (
-    <a
-      style={{ color: '#3E7700' }}
-      className={c(className, 'text-lg mr-10 tracking-wider')}
-      href={to}
-    >
-      {title}
-    </a>
-  );
-}
-
 function Statusbar() {
   return (
     <div className="w-full py-5 px-10">
@@ -30,8 +17,20 @@ function Statusbar() {
           <img className="h-full" src={logo} />
         </div>
         <span className="flex-grow" />
-        <StatusLink title="Autor" to="https://evzen.dev" className="mr-10" />
-        <StatusLink title="Kontakt" to="https://evzen.dev" className="mr-10" />
+        <a
+          style={{ color: '#3E7700' }}
+          className="text-lg mr-10 tracking-wider"
+          href="https://evzen.dev"
+        >
+          Autor
+        </a>
+        <button
+          style={{ color: '#3E7700' }}
+          className="text-lg mr-10 tracking-wider"
+          onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
+        >
+          Kontakt
+        </button>
       </div>
     </div>
   );
@@ -51,7 +50,7 @@ export default function Header() {
       <Statusbar />
 
       <div className="flex flex-col h-screen mt-32 p-32">
-        <div className="w-1/2">
+        <div className="w-1/2 mb-8">
           <h1 className="text-5xl mb-4 font-extrabold tracking-wide" style={{ color: '#214200' }}>
             Soutěže, přehledně
           </h1>
@@ -60,9 +59,16 @@ export default function Header() {
             soutěžím. Studentům pomáhá soutěže objevovat, učitelům organizovat.
           </h2>
         </div>
+        <button
+          style={{ backgroundColor: '#5F8427' }}
+          className="text-white text-lg tracking-wider font-medium shadow-lg py-4 px-6 max-w-xs rounded-md hover:shadow-xs transition-all ease-in duration-100"
+          onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
+        >
+          Chci být u toho!
+        </button>
       </div>
 
-      <Section bg="bg-transparent">
+      <Section bgColor="bg-transparent" bgSrc={'mailer'} bgPosition={{ x: '100%', y: '100%' }}>
         <Image source={overview} />
         <div className="mx-12" />
         <div>

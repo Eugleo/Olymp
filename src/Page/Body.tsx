@@ -10,22 +10,40 @@ import reviews from '../assets/reviews.svg';
 import notification from '../assets/notification.svg';
 import recommendations from '../assets/recommendations.svg';
 
+import reviewer from '../assets/peeps/reviewer.svg';
+import mailer from '../assets/peeps/mailer.svg';
+import notifier from '../assets/peeps/notifier.svg';
+import angrer from '../assets/peeps/angrer.svg';
+import interester from '../assets/peeps/interester.svg';
+import inspirer from '../assets/peeps/inspirer.svg';
+
 import Title from '../Section/Title';
-import EmailField from './EmailForm';
+import { EmailFieldYellow } from './EmailForm';
 
 export default function Body() {
   return (
     <div className="flex flex-col items-stretch w-full">
       <div style={{ marginTop: '-2em' }}>
-        <Section bg="bg-gold" hFull={false}>
-          <EmailField
+        <Section
+          bgColor="bg-gold"
+          hFull={false}
+          bgSrc={mailer}
+          bgPosition={{ x: '90%', y: 'calc(100% + 34px)' }}
+        >
+          <EmailFieldYellow
             title="Chcete se jako první dozvídat novinky o Olympu?"
-            description="Dáme vám vědět, až bude Olymp připravený."
+            description="Zadejte níže svůj email pokud chcete abychom vám dali vědět, kdykoli bude u Olympu něco nového."
           />
         </Section>
       </div>
 
-      <Section bg="bg-rosewood" hFull={false} skew={Skew.right}>
+      <Section
+        bgColor="bg-rosewood"
+        hFull={false}
+        skew={Skew.right}
+        bgSrc={'mailer'}
+        bgPosition={{ x: '100%', y: '100%' }}
+      >
         <div>
           <Title text="Jeden pohled stačí" color="text-white" />
           <Paragraph color="text-white">
@@ -41,7 +59,7 @@ export default function Body() {
         <Image source={contestHeader}></Image>
       </Section>
 
-      <Section bg="bg-gold">
+      <Section bgColor="bg-gold" bgSrc={inspirer} bgPosition={{ x: '90%', y: 'calc(100% + 35px)' }}>
         <Image source={recommendations} />
         <div className="mx-12" />
         <div>
@@ -54,7 +72,11 @@ export default function Body() {
         </div>
       </Section>
 
-      <Section bg="bg-gold-dark">
+      <Section
+        bgColor="bg-gold-dark"
+        bgSrc={reviewer}
+        bgPosition={{ x: '10%', y: 'calc(100% + 35px)' }}
+      >
         <div>
           <Title text="Informace z první ruky" />
           <Paragraph>
@@ -67,7 +89,12 @@ export default function Body() {
       </Section>
 
       <div>
-        <Section bg="bg-rosewood" hFull={false}>
+        <Section
+          bgColor="bg-rosewood"
+          hFull={false}
+          bgSrc={notifier}
+          bgPosition={{ x: '100%', y: 'calc(100% + 35px)' }}
+        >
           <Image source={notification} />
           <div className="mx-12" />
           <div>
@@ -80,7 +107,11 @@ export default function Body() {
         </Section>
       </div>
 
-      <Section bg="bg-gold">
+      <Section
+        bgColor="bg-gold"
+        bgSrc={interester}
+        bgPosition={{ x: '5%', y: 'calc(100% + 35px)' }}
+      >
         <div>
           <Title text="Víme, co vás zajímá" />
           <Paragraph>
@@ -92,7 +123,11 @@ export default function Body() {
         <Image source={faq} />
       </Section>
 
-      <Section bg="bg-gold-dark">
+      <Section
+        bgColor="bg-gold-dark"
+        bgSrc={angrer}
+        bgPosition={{ x: '100%', y: 'calc(100% + 35px)' }}
+      >
         <Image source={quickQuestions} />
         <div className="mx-12" />
         <div>
