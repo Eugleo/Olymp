@@ -9,7 +9,7 @@ export default function EmailField({ title, description }: { title: string; desc
         <p className="text-lg mb-4 text-gray-800">{description}</p>
         <div className="flex w-full flex-row">
           <Field
-            className="bg-yellow-300 flex-grow rounded-l-md px-4 py-2 text-lg text-yellow-300 placeholder-yellow-400"
+            className="flex-grow rounded-l-md px-4 py-2 text-lg text-black bg-gold-dark placeholder-gold-darkest"
             type="email"
             name="email"
             placeholder="jan.novak@seznam.cz"
@@ -18,7 +18,7 @@ export default function EmailField({ title, description }: { title: string; desc
             Potvrdit
           </button>
         </div>
-        <p className="text-sm text-gray-700 mt-2 tracking-wider">
+        <p className="text-xs uppercase text-gold-darkest mt-2 tracking-wider">
           Posíláme maximálně jeden mail měsíčně
         </p>
       </Form>

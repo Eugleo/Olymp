@@ -9,7 +9,9 @@ module.exports = {
       colors: {
         gold: {
           default: '#FFF8D7',
-          darker: '#F9ECB2',
+          dark: '#F9ECB2',
+          darker: '#CDA209',
+          darkest: '#AA9E61',
         },
         rosewood: {
           default: '#A71D31',
@@ -348,7 +350,11 @@ module.exports = {
     }),
     minHeight: {
       '0': '0',
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
       full: '100%',
+      'screen-3/4': '75vh',
       screen: '100vh',
     },
     minWidth: {

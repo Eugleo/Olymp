@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from '../Section/Section';
+import Section, { Skew } from '../Section/Section';
 import Paragraph from '../Section/Paragraph';
 import Image from '../Section/Image';
 
@@ -16,14 +16,16 @@ import EmailField from './EmailForm';
 export default function Body() {
   return (
     <div className="flex flex-col items-stretch w-full">
-      <div className="w-full bg-gold flex items-center py-40">
-        <EmailField
-          title="Chcete se jako první dozvídat novinky o Olympu?"
-          description="Dáme vám vědět, až bude Olymp připravený."
-        />
+      <div style={{ marginTop: '-2em' }}>
+        <Section bg="bg-gold" hFull={false}>
+          <EmailField
+            title="Chcete se jako první dozvídat novinky o Olympu?"
+            description="Dáme vám vědět, až bude Olymp připravený."
+          />
+        </Section>
       </div>
 
-      <Section bg="bg-rosewood">
+      <Section bg="bg-rosewood" hFull={false} skew={Skew.right}>
         <div>
           <Title text="Jeden pohled stačí" color="text-white" />
           <Paragraph color="text-white">
@@ -52,7 +54,7 @@ export default function Body() {
         </div>
       </Section>
 
-      <Section bg="bg-gold-darker">
+      <Section bg="bg-gold-dark">
         <div>
           <Title text="Informace z první ruky" />
           <Paragraph>
@@ -64,17 +66,19 @@ export default function Body() {
         <Image source={reviews} />
       </Section>
 
-      <Section bg="bg-rosewood">
-        <Image source={notification} />
-        <div className="mx-12" />
-        <div>
-          <Title text="Termíny pod kontrolou" color="text-white" />
-          <Paragraph color="text-white">
-            Nemusíte už každý den kontrolovat, jestli nebyl vyhlášen termín dalšího kola vaší oblené
-            soutěže. Olymp vám dá vědět.
-          </Paragraph>
-        </div>
-      </Section>
+      <div>
+        <Section bg="bg-rosewood" hFull={false}>
+          <Image source={notification} />
+          <div className="mx-12" />
+          <div>
+            <Title text="Termíny pod kontrolou" color="text-white" />
+            <Paragraph color="text-white">
+              Nemusíte už každý den kontrolovat, jestli nebyl vyhlášen termín dalšího kola vaší
+              oblené soutěže. Olymp vám dá vědět.
+            </Paragraph>
+          </div>
+        </Section>
+      </div>
 
       <Section bg="bg-gold">
         <div>
@@ -88,7 +92,7 @@ export default function Body() {
         <Image source={faq} />
       </Section>
 
-      <Section bg="bg-gold-darker">
+      <Section bg="bg-gold-dark">
         <Image source={quickQuestions} />
         <div className="mx-12" />
         <div>
