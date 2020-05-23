@@ -6,7 +6,7 @@ export default function Paragraph({
   color = 'text-gray-800',
 }: React.PropsWithChildren<{ color?: string }>) {
   return (
-    <p className={c('text-xl', 'font-light', 'tracking-wider', color, 'max-w-xl', 'mb-4')}>
+    <p className={c('text-xl', 'font-light', 'tracking-wide', color, 'max-w-xl', 'mb-4')}>
       {children}
     </p>
   );
