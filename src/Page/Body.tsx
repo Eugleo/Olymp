@@ -23,7 +23,7 @@ import { EmailFieldYellow } from './EmailForm';
 export default function Body() {
   return (
     <div className="flex flex-col items-stretch">
-      <div style={{ marginTop: '-2em' }}>
+      <div id="emailForm" style={{ marginTop: '-2em' }}>
         <Section
           bgColor="bg-gold"
           hFull={false}

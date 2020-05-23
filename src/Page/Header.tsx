@@ -60,7 +60,11 @@ export default function Header() {
           </h2>
           <button
             className="text-white text-lg bg-green-800 tracking-wider font-medium shadow-lg py-4 px-6 w-full rounded-md hover:shadow-xs transition-all ease-in duration-100 sm:max-w-xs"
-            onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
+            onClick={() =>
+              document.getElementById('emailForm')?.scrollIntoView({
+                behavior: 'smooth',
+              })
+            }
           >
             Chci být u toho!
           </button>
