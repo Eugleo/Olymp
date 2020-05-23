@@ -5,6 +5,7 @@ import Body from './Page/Body';
 import Footer from './Page/Footer';
 
 import 'lazysizes';
+import 'lazysizes/plugins/unveilhooks/ls.unveilhooks';
 
 function App() {
   return (

@@ -34,13 +34,14 @@ export default function Section({
     <div
       style={{
         transform: trans,
-        backgroundImage: `url('${bgSrc}')`,
         backgroundRepeat: 'no-repeat',
         backgroundPositionX: x,
         backgroundPositionY: y,
         backgroundSize: '200px 200px',
       }}
+      data-bg={bgSrc}
       className={c(
+        'lazyload',
         bgSrc !== '' ? 'pt-16 pb-40' : 'pt-16 pb-16',
         'px-8 md:px-16 xl:px-32',
         hFull ? 'lg:py-16' : 'lg:py-32',
