@@ -22,7 +22,7 @@ import { EmailFieldYellow } from './EmailForm';
 
 export default function Body() {
   return (
-    <div className="flex flex-col items-stretch w-full">
+    <div className="flex flex-col items-stretch">
       <div style={{ marginTop: '-2em' }}>
         <Section
           bgColor="bg-gold"
@@ -41,8 +41,9 @@ export default function Body() {
         bgColor="bg-rosewood"
         hFull={false}
         skew={Skew.right}
-        bgSrc={'mailer'}
+        bgSrc=""
         bgPosition={{ x: '100%', y: '100%' }}
+        reverse={true}
       >
         <div>
           <Title text="Jeden pohled stačí" color="text-white" />
@@ -76,6 +77,7 @@ export default function Body() {
         bgColor="bg-gold-dark"
         bgSrc={reviewer}
         bgPosition={{ x: '10%', y: 'calc(100% + 35px)' }}
+        reverse={true}
       >
         <div>
           <Title text="Informace z první ruky" />
@@ -111,6 +113,7 @@ export default function Body() {
         bgColor="bg-gold"
         bgSrc={interester}
         bgPosition={{ x: '5%', y: 'calc(100% + 35px)' }}
+        reverse={true}
       >
         <div>
           <Title text="Víme, co vás zajímá" />

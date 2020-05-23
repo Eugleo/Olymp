@@ -14791,6 +14791,14 @@ video {
   transition-delay: 1000ms;
 }
 
+.reverse {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 1024px) {
+  flex-direction: row;
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
