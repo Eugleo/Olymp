@@ -58,9 +58,9 @@ export default function Header() {
               Soutěže, přehledně
             </h1>
             <h2 className="text-xl mb-8" style={{ color: '#305C00' }}>
-              Olymp je koncept interaktivního katalogu středoškolských soutěží, který je určený pro
-              studenty i pedagogy. Studentům usnadňuje objevování nových soutěží a učitelům pomáhá s
-              jejich plánováním a organizací.
+              Olymp je interaktivní katalog středoškolských soutěží, který je určený pro studenty i
+              pedagogy. Studentům usnadňuje objevování nových soutěží a učitelům pomáhá s jejich
+              plánováním a organizací.
             </h2>
             <button
               className="text-white text-lg bg-green-800 tracking-wider font-medium shadow-lg py-4 px-6 w-full rounded-md hover:shadow-xs transition-all ease-in duration-100 sm:max-w-xs"
@@ -87,17 +87,17 @@ export default function Header() {
                 úrovně programu Excelence.
               </Paragraph>
               <Paragraph>
-                Olymp vám ale pomůže také s <i>plánováním</i> soutěží: vybere například termín pro
-                organizaci školního kola, tak, aby vám vyhovoval.
+                Olymp vám pomůže také s plánováním soutěží. Pomocí dostupných informací pomůže
+                například s výběrem termínů, které vyhovují všem účastníkům.
               </Paragraph>
               <Paragraph>
-                U každé soutěže mimo jiné najdete kontakty na organizátory, často kladené dotazy a
-                recenze účastníků.
+                U každé soutěže najdete kontakty na organizátory, často kladené dotazy a recenze
+                účastníků, mimo jiné.
               </Paragraph>
               <Paragraph>
                 Chceme, aby se Olymp stal jediným zdrojem informací o soutěžích, který budete muset
-                navštěvovat — dejte sbohem mailům od organizátorů, googlování a neustálému
-                kontrolování nástěnek.
+                navštěvovat — rychlejší a spolehlivější alternativou k desítkám mailů od
+                organizátorů, zdlouhavému googlování a neustálému kontrolování nástěnek.
               </Paragraph>
             </div>
           </div>

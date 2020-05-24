@@ -48,8 +48,8 @@ export default function Body() {
         <div>
           <Title text="Jeden pohled stačí" color="text-white" />
           <Paragraph color="text-white">
-            Základní informace o každé soutěži najdete hned nahoře na její stránce, v elegantní a
-            přehledné formě.
+            Všechny informace na jednom místě. Místo zdlouhavého procházení nespočtu stránek si
+            můžete soutěž jednoduše vyhledat na Olympu a ihned se o ní dozvědět vše, co potřebujete.
           </Paragraph>
           <Paragraph color="text-white">
             Proč trávit čas dohledáváním informací, když ho můžete vyplnit i zajímavějšími věcmi —
@@ -106,8 +106,8 @@ export default function Body() {
           <div>
             <Title text="Termíny pod kontrolou" color="text-white" />
             <Paragraph color="text-white">
-              Nemusíte už každý den kontrolovat, jestli nebyl vyhlášen termín dalšího kola vaší
-              oblíbené soutěže, nebo jestli už uvolnili výsledky. Olymp vám dá vědět.
+              S Olympem už nemusíte každý den kontrolovat, zda už vyšly výsledky nebo byl vyhlášen
+              nový termín. Olymp vám dá vědět.
             </Paragraph>
           </div>
         </Section>
