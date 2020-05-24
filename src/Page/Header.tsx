@@ -3,6 +3,7 @@ import React from 'react';
 import logo from '../assets/logo.svg';
 import olymp from '../assets/olymp.svg';
 import Title from '../Section/Title';
+import { Spacer } from '../Section/Section';
 import Paragraph from '../Section/Paragraph';
 import Image from '../Section/Image';
 
@@ -44,19 +45,22 @@ export default function Header() {
         backgroundSize: 'cover',
         backgroundPositionX: '75%',
       }}
-      className=""
     >
-      <div className="flex flex-col px-8 md:px-16 xl:px-32 p-8">
-        <div className="h-screen">
+      <div className="flex flex-col px-8 md:px-16 p-8">
+        <div className="min-h-screen flex flex-col">
           <Statusbar />
 
-          <div className="max-w-lg mt-32 xl:mt-64">
-            <h1 className="text-5xl mb-4 font-extrabold tracking-wide" style={{ color: '#214200' }}>
+          <div className="max-w-lg xl:flex-grow xl:flex xl:flex-col xl:justify-center">
+            <h1
+              className="text-5xl mt-32 xl:mt-0 mb-4 font-extrabold tracking-wide"
+              style={{ color: '#214200' }}
+            >
               Soutěže, přehledně
             </h1>
             <h2 className="text-xl mb-8" style={{ color: '#305C00' }}>
-              Olymp je koncept stránky, která má za cíl přivést více studentů středních škol k
-              soutěžím. Studentům pomáhá soutěže objevovat, učitelům organizovat.
+              Olymp je koncept interaktivního katalogu středoškolských soutěží, který je určený pro
+              studenty i pedagogy. Studentům usnadňuje objevování nových soutěží a učitelům pomáhá s
+              jejich plánováním a organizací.
             </h2>
             <button
               className="text-white text-lg bg-green-800 tracking-wider font-medium shadow-lg py-4 px-6 w-full rounded-md hover:shadow-xs transition-all ease-in duration-100 sm:max-w-xs"
@@ -74,21 +78,26 @@ export default function Header() {
         <div className="pb-16">
           <div className="flex flex-col lg:flex-row justify-around items-center max-w-6xl mx-auto">
             <Image source={overview} alt="Elegantní seznam soutěží v Olympu" />
-            <div className="mx-12" />
+            <Spacer />
             <div>
               <Title text="Nástěnky + mail + Google = Olymp" />
               <Paragraph>
-                Dejte sbohem složitému prohledávání dokumentů z MŠMT, každodennímu prohlížení
-                školních nástěnek a desítkám reklamních mailů od organizátorů!
+                Olymp je především přehledný a strukturovaný katalog středoškolských soutěží.
+                Vyhledávat v něm lze například dle věkových či oborových kategorií, nebo podle
+                úrovně programu Excelence.
               </Paragraph>
               <Paragraph>
-                V Olympu jsou soutěže obarvené podle předmětu, kterého se nejvíce týkají. Soutěže
-                lze samozřejmě třídit nejen podle předmětu, ale například také podle hodnocení
-                účastníků, věkové kategorie, nebo bodů excelence.
+                Olymp vám ale pomůže také s <i>plánováním</i> soutěží: vybere například termín pro
+                organizaci školního kola, tak, aby vám vyhovoval.
               </Paragraph>
               <Paragraph>
-                To spolu s dalšími funkcemi Olympu ulehčuje studentům i učitelům objevování nových
-                soutěží.
+                U každé soutěže mimo jiné najdete kontakty na organizátory, často kladené dotazy a
+                recenze účastníků.
+              </Paragraph>
+              <Paragraph>
+                Chceme, aby se Olymp stal jediným zdrojem informací o soutěžích, který budete muset
+                navštěvovat — dejte sbohem mailům od organizátorů, googlování a neustálému
+                kontrolování nástěnek.
               </Paragraph>
             </div>
           </div>

@@ -7,6 +7,10 @@ export enum Skew {
   none,
 }
 
+export function Spacer() {
+  return <div className="mx-12 my-5" />;
+}
+
 export default function Section({
   bgColor,
   bgSrc,

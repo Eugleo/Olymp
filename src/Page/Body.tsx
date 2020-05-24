@@ -1,5 +1,5 @@
 import React from 'react';
-import Section, { Skew } from '../Section/Section';
+import Section, { Skew, Spacer } from '../Section/Section';
 import Paragraph from '../Section/Paragraph';
 import Image from '../Section/Image';
 
@@ -19,10 +19,6 @@ import inspirer from '../assets/peeps/inspirer.svg';
 
 import Title from '../Section/Title';
 import { EmailFieldYellow } from './EmailForm';
-
-function Spacer() {
-  return <div className="mx-12 my-5" />;
-}
 
 export default function Body() {
   return (
