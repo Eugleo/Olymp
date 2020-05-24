@@ -34,7 +34,7 @@ export function EmailFieldYellow({ title, description }: { title: string; descri
           </button>
         </div>
         <p className="text-xs uppercase text-gold-darkest mt-2 tracking-wider">
-          Posíláme maximálně jeden mail měsíčně
+          Vaši adresu s nikým nesdílíme. Posíláme cca 1 mail měsíčně.
         </p>
       </Form>
     </Formik>
@@ -61,7 +61,7 @@ export function EmailFieldGreen({ title, description }: { title: string; descrip
           </button>
         </div>
         <p className="text-xs uppercase text-green-900 mt-2 tracking-wider">
-          Posíláme maximálně jeden mail měsíčně
+          Vaši adresu s nikým nesdílíme. Posíláme cca 1 mail měsíčně.
         </p>
       </Form>
     </Formik>

@@ -3,6 +3,7 @@ import React from 'react';
 import olymp from '../assets/olymp-footer.svg';
 
 import { EmailFieldGreen } from './EmailForm';
+import privacy from '../assets/privacy.txt';
 
 export default function Footer() {
   return (
@@ -17,11 +18,22 @@ export default function Footer() {
       className="py-48 md:pb-48 pb-56 min-h-screen-3/4"
     >
       <div className="flex flex-col px-8 md:px-16 xl:px-32 p-8">
-        <div className="max-w-lg mb-12">
+        <div className="max-w-lg mb-6">
           <EmailFieldGreen
             title="Zaujal vás Olymp?"
             description="Přihlašte se k odběru novinek o Olympu a my vám průběžně budeme dávat vědět, jak probíhá jeho vývoj."
           />
+        </div>
+
+        <div className="max-w-lg mb-6">
+          <p className="text-lg mb-4 text-gray-800">
+            Váš e-mail je u nás v bezpečí. S nikým ho nesdílíme a používáme jej výhradně ke
+            komunikaci o Olympu. Pokud vás zajáímavjí detaily, můžete si přečíst naše{' '}
+            <a className="text-green-800" href={privacy}>
+              zásady ochrany osobních údajů
+            </a>
+            .
+          </p>
         </div>
 
         <div className="max-w-lg">
