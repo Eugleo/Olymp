@@ -48,12 +48,12 @@ export default function Body() {
         <div>
           <Title text="Jeden pohled stačí" color="text-white" />
           <Paragraph color="text-white">
-            Chceme, aby se studenti a učitelé mohli soustředit především na tu zajímavou stránku
-            soutěží, ne na dohledávání informací o nich.
+            Základní informace o každé soutěži najdete hned nahoře na její stránce, v elegantní a
+            přehledné formě.
           </Paragraph>
           <Paragraph color="text-white">
-            Proto základní informace o každé soutěži najdete hned nahoře na její stránce, v
-            elegantní a přehledné formě.
+            Proč trávit čas dohledáváním informací, když ho můžete vyplnit i zajímavějšími věcmi —
+            například další soutěží!
           </Paragraph>
         </div>
         <Spacer />
@@ -66,9 +66,12 @@ export default function Body() {
         <div>
           <Title text="Nechte se inspirovat" />
           <Paragraph>
-            Koho by bavilo pořád jen procházet a třídit seznamy? Olymp vám doporučí podobné soutěže,
-            nebo soutěže oblíbené mezi lidmi s podobným vkusem, a pomůže vám tak objevit nové výzvy
-            a rozšířit si obzory.
+            Strukturovaný katalog s filtry je sice fajn, ale koho by bavilo pořád jen procházet a
+            třídit seznamy?
+          </Paragraph>
+          <Paragraph>
+            Olymp vám doporučí podobné soutěže, nebo soutěže oblíbené mezi lidmi s podobným vkusem,
+            a pomůže vám tak objevit nové výzvy a rozšířit si obzory.
           </Paragraph>
         </div>
       </Section>
@@ -82,8 +85,9 @@ export default function Body() {
         <div>
           <Title text="Informace z první ruky" />
           <Paragraph>
-            Osobní zkušenost je často důležitější než to, co vám o soutěži řeknou její organizátoři.
-            Na Olympu si přečtete, jak soutěž hodnotí její bývalí účastníci a učitelé.
+            Ne nadarmo se říká, že není nad osobní zkušenost. Na Olympu si vašeho názoru vážíme, a
+            proto si u každé soutěže můžete přečíst, jak soutěž hodnotí její bývalí účastníci a
+            učitelé.
           </Paragraph>
         </div>
         <Spacer />
@@ -103,7 +107,7 @@ export default function Body() {
             <Title text="Termíny pod kontrolou" color="text-white" />
             <Paragraph color="text-white">
               Nemusíte už každý den kontrolovat, jestli nebyl vyhlášen termín dalšího kola vaší
-              oblené soutěže. Olymp vám dá vědět.
+              oblíbené soutěže, nebo jestli už uvolnili výsledky. Olymp vám dá vědět.
             </Paragraph>
           </div>
         </Section>
@@ -119,7 +123,7 @@ export default function Body() {
           <Title text="Víme, co vás zajímá" />
           <Paragraph>
             Ušetřete si práci s kontaktováním organizátorů — přečtěte si odpovědi na často pokládané
-            otázky přímo na Olympu!
+            otázky přímo na Olympu! Tuto funkci kromě učitelů jistě ocení i organizátoři.
           </Paragraph>
         </div>
         <Spacer />
@@ -142,7 +146,7 @@ export default function Body() {
             Často kladené dotazy, které v seznamu výše zodpovězeny být nemohou, můžete organizátorům
             jednoduše poslat přímo z naší stránky.
           </Paragraph>
-          <Paragraph>Klik, klik, vyplnit svou adresu — a hotovo.</Paragraph>
+          <Paragraph>Klik, klik, vyplníte svou adresu — a hotovo.</Paragraph>
         </div>
       </Section>
 
@@ -150,8 +154,8 @@ export default function Body() {
         <div>
           <Title text="Chytré plánování" color="text-white" />
           <Paragraph color="text-white">
-            Soutěž trvá dvě hodiny, účastní se jí septimy a oktávy, nesmí být přes oběd, a nesmí
-            nikomu zasahovat do hodin matematiky. Jak tohle vyřešit?
+            Soutěž trvá dvě hodiny, účastní se jí septimy a oktávy, nechci, aby byla přes oběd, a
+            nesmí nikomu zasahovat do hodin matematiky. Jak tohle vyřešit?
           </Paragraph>
           <Paragraph color="text-white">
             Jednoduše — nahrejte rozvrhy do Olympu, popište své podmínky a nechte počítač, ať udělá
@@ -166,7 +170,7 @@ export default function Body() {
           </Paragraph>
           <Paragraph color="text-white">
             Nejen, že všem relevantním studentům přijde upozornění, že byl vyhlášen nový termín, ale
-            navíc rovnou uvidíte, že se v daný den ve vašem okrese už jedna olympiáda koná — a že by
+            navíc rovnou uvidíte, že se v daný den ve vašem okrese už jedna olympiáda koná a že by
             se mohly překrývat.
           </Paragraph>
         </div>
