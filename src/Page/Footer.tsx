@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="max-w-lg mb-6">
           <p className="text-lg mb-4 text-gray-800">
             Váš e-mail je u nás v bezpečí. S nikým ho nesdílíme a používáme jej výhradně ke
-            komunikaci o Olympu. Pokud vás zajáímavjí detaily, můžete si přečíst naše{' '}
+            komunikaci o Olympu. Pokud vás zajímají detaily, můžete si přečíst naše{' '}
             <a className="text-green-800" href={privacy}>
               zásady ochrany osobních údajů
             </a>
