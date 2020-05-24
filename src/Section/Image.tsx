@@ -5,7 +5,7 @@ export default function Image({
   alt,
 }: React.PropsWithChildren<{ source: string; alt: string }>) {
   return (
-    <div className="shadow-lg max-w-4xl rounded-md mb-12 lg:mb-0">
+    <div className="shadow-lg max-w-4xl rounded-md">
       <img className="lazyload" data-src={source} alt={alt} />
     </div>
   );

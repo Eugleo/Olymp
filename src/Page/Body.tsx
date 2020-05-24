@@ -20,6 +20,10 @@ import inspirer from '../assets/peeps/inspirer.svg';
 import Title from '../Section/Title';
 import { EmailFieldYellow } from './EmailForm';
 
+function Spacer() {
+  return <div className="mx-12 my-5" />;
+}
+
 export default function Body() {
   return (
     <div className="flex flex-col items-stretch">
@@ -56,13 +60,13 @@ export default function Body() {
             elegantní a přehledné formě.
           </Paragraph>
         </div>
-        <div className="mx-12" />
+        <Spacer />
         <Image source={contestHeader} alt=""></Image>
       </Section>
 
       <Section bgColor="bg-gold" bgSrc={inspirer} bgPosition={{ x: '90%', y: 'calc(100% + 35px)' }}>
         <Image source={recommendations} alt="Automatická doporučení podobných soutěží" />
-        <div className="mx-12" />
+        <Spacer />
         <div>
           <Title text="Nechte se inspirovat" />
           <Paragraph>
@@ -86,7 +90,7 @@ export default function Body() {
             Na Olympu si přečtete, jak soutěž hodnotí její bývalí účastníci a učitelé.
           </Paragraph>
         </div>
-        <div className="mx-12" />
+        <Spacer />
         <Image source={reviews} alt="Recenze účastníků soutěží v Olympu" />
       </Section>
 
@@ -98,7 +102,7 @@ export default function Body() {
           bgPosition={{ x: '100%', y: 'calc(100% + 35px)' }}
         >
           <Image source={notification} alt="Upozornění na blížící se termín soutěže" />
-          <div className="mx-12" />
+          <Spacer />
           <div>
             <Title text="Termíny pod kontrolou" color="text-white" />
             <Paragraph color="text-white">
@@ -122,7 +126,7 @@ export default function Body() {
             otázky přímo na Olympu!
           </Paragraph>
         </div>
-        <div className="mx-12" />
+        <Spacer />
         <Image source={faq} alt="Seznam FAQ v Olympu" />
       </Section>
 
@@ -135,7 +139,7 @@ export default function Body() {
           source={quickQuestions}
           alt="Okno se zatrhnutelnými předpřipravenými otázkami, které lze odeslat organizátorům"
         />
-        <div className="mx-12" />
+        <Spacer />
         <div>
           <Title text="...nebo nevíme?" />
           <Paragraph>
@@ -143,6 +147,32 @@ export default function Body() {
             jednoduše poslat přímo z naší stránky.
           </Paragraph>
           <Paragraph>Klik, klik, vyplnit svou adresu — a hotovo.</Paragraph>
+        </div>
+      </Section>
+
+      <Section bgColor="bg-rosewood" bgSrc="" bgPosition={{ x: '100%', y: 'calc(100% + 35px)' }}>
+        <div>
+          <Title text="Chytré plánování" color="text-white" />
+          <Paragraph color="text-white">
+            Soutěž trvá dvě hodiny, účastní se jí septimy a oktávy, nesmí být přes oběd, a nesmí
+            nikomu zasahovat do hodin matematiky. Jak tohle vyřešit?
+          </Paragraph>
+          <Paragraph color="text-white">
+            Jednoduše — nahrejte rozvrhy do Olympu, popište své podmínky a nechte počítač, ať udělá
+            složitou práci za vás.
+          </Paragraph>
+        </div>
+        <Spacer />
+        <div>
+          <Title text="Buďte v obraze" color="text-white" />
+          <Paragraph color="text-white">
+            Termíny okresních a krajských kol soutěží můžete plánovat rovnou na Olympu.
+          </Paragraph>
+          <Paragraph color="text-white">
+            Nejen, že všem relevantním studentům přijde upozornění, že byl vyhlášen nový termín, ale
+            navíc rovnou uvidíte, že se v daný den ve vašem okrese už jedna olympiáda koná — a že by
+            se mohly překrývat.
+          </Paragraph>
         </div>
       </Section>
     </div>
