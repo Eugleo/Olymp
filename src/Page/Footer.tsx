@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="max-w-lg mb-6">
           <EmailFieldGreen
             title="Zaujal vás Olymp?"
-            description="Přihlašte se k odběru novinek o Olympu a my vám průběžně budeme dávat vědět, jak probíhá jeho vývoj."
+            description="Olymp je zatím ve fázi plánování. Přihlašte se k odběru novinek o Olympu a my vám průběžně budeme dávat vědět, jak probíhá jeho vývoj."
           />
         </div>
 

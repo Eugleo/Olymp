@@ -32,7 +32,7 @@ export default function Body() {
         >
           <EmailFieldYellow
             title="Chcete se jako první dozvídat novinky o Olympu?"
-            description="Zadejte níže svůj email pokud chcete abychom vám dali vědět, kdykoli bude u Olympu něco nového."
+            description="Olymp je zatím ve fázi plánování. Zadejte níže svůj email pokud chcete dostávat novinky o jeho vývoji."
           />
         </Section>
       </div>
