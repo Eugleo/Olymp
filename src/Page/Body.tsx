@@ -66,12 +66,12 @@ export default function Body() {
         <div>
           <Title text="Nechte se inspirovat" />
           <Paragraph>
-            Strukturovaný katalog s filtry je sice fajn, ale koho by bavilo pořád jen procházet a
-            třídit seznamy?
-          </Paragraph>
-          <Paragraph>
             Olymp vám doporučí podobné soutěže, nebo soutěže oblíbené mezi lidmi s podobným vkusem,
             a pomůže vám tak objevit nové výzvy a rozšířit si obzory.
+          </Paragraph>
+          <Paragraph>
+            Tato funkce přijde vhod každému, koho už omrzí funkce filtrování a vyhledávání, které
+            Olymp nabízí.
           </Paragraph>
         </div>
       </Section>

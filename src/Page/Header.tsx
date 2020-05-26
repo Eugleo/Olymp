@@ -83,8 +83,8 @@ export default function Header() {
               <Title text="Nástěnky + mail + Google = Olymp" />
               <Paragraph>
                 Olymp je především přehledný a strukturovaný katalog středoškolských soutěží.
-                Vyhledávat v něm lze například dle věkových či oborových kategorií, nebo podle
-                úrovně programu Excelence.
+                Vyhledávat v něm lze například dle věkových kategorií, podle úrovně programu
+                Excelence, nebo podle předmětu, kterého se soutěže týkají.
               </Paragraph>
               <Paragraph>
                 Olymp vám pomůže také s plánováním soutěží. Pomocí dostupných informací pomůže
