@@ -70,8 +70,8 @@ export default function Body() {
             a pomůže vám tak objevit nové výzvy a rozšířit si obzory.
           </Paragraph>
           <Paragraph>
-            Tato funkce přijde vhod každému, koho už omrzí funkce filtrování a vyhledávání, které
-            Olymp nabízí.
+            Automatické doporučování jistě přijde vhod každému, koho už omrzí funkce filtrování a
+            vyhledávání, které Olymp nabízí.
           </Paragraph>
         </div>
       </Section>
