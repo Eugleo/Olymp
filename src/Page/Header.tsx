@@ -62,16 +62,12 @@ export default function Header() {
               pedagogy. Studentům usnadňuje objevování nových soutěží a učitelům pomáhá s jejich
               plánováním a organizací.
             </h2>
-            <button
-              className="text-white text-lg bg-green-800 tracking-wider font-medium shadow-lg py-4 px-6 w-full rounded-md hover:shadow-xs transition-all ease-in duration-100 mb-8 sm:max-w-xs"
-              onClick={() =>
-                document.getElementById('emailForm')?.scrollIntoView({
-                  behavior: 'smooth',
-                })
-              }
+            <a
+              className="text-white text-lg bg-green-800 text-center tracking-wider font-medium shadow-lg py-4 px-6 w-full rounded-md hover:shadow-xs transition-all ease-in duration-100 mb-8 sm:max-w-xs"
+              href="https://forms.gle/HiFDrQJf5ECzjbBVA"
             >
-              Chci být u toho!
-            </button>
+              Vyplnit dotazník (5 minut)
+            </a>
           </div>
         </div>
 
