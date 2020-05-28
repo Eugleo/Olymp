@@ -3,7 +3,20 @@ import { Formik, Form, Field } from 'formik';
 
 import emailjs from 'emailjs-com';
 
+declare global {
+  interface Window {
+    plausible: any;
+  }
+}
+
+window.plausible =
+  window.plausible ||
+  function (args: string) {
+    (window.plausible.q = window.plausible.q || []).push(args);
+  };
+
 function submitEmail(values: { email: string }) {
+  window.plausible('Email');
   emailjs.send('gmail', 'template_Z2J36vTg', values, 'user_jxxm36Q8serIbYwo7Qc6S').then(
     () => {
       alert('Podařilo se! Děkujeme!');

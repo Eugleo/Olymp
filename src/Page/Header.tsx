@@ -65,6 +65,7 @@ export default function Header() {
             <a
               className="text-white text-lg bg-green-800 text-center tracking-wider font-medium shadow-lg py-4 px-6 w-full rounded-md hover:shadow-xs transition-all ease-in duration-100 mb-8 sm:max-w-xs"
               href="https://forms.gle/HiFDrQJf5ECzjbBVA"
+              onClick={() => window.plausible('Form')}
             >
               Vyplnit dotazník (5 minut)
             </a>
