@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/olymp/static/css/main.70e3c631.chunk.css",
+    "main.js": "/olymp/static/js/main.986234fc.chunk.js",
+    "main.js.map": "/olymp/static/js/main.986234fc.chunk.js.map",
+    "runtime-main.js": "/olymp/static/js/runtime-main.9cdbef16.js",
+    "runtime-main.js.map": "/olymp/static/js/runtime-main.9cdbef16.js.map",
+    "static/js/2.9f2dfa67.chunk.js": "/olymp/static/js/2.9f2dfa67.chunk.js",
+    "static/js/2.9f2dfa67.chunk.js.map": "/olymp/static/js/2.9f2dfa67.chunk.js.map",
+    "index.html": "/olymp/index.html",
+    "precache-manifest.17d8a4d11fec9175c4febd6a03b0876e.js": "/olymp/precache-manifest.17d8a4d11fec9175c4febd6a03b0876e.js",
+    "service-worker.js": "/olymp/service-worker.js",
+    "static/css/main.70e3c631.chunk.css.map": "/olymp/static/css/main.70e3c631.chunk.css.map",
+    "static/js/2.9f2dfa67.chunk.js.LICENSE.txt": "/olymp/static/js/2.9f2dfa67.chunk.js.LICENSE.txt",
+    "static/media/angrer.svg": "/olymp/static/media/angrer.bbb2d3a5.svg",
+    "static/media/contest-header.svg": "/olymp/static/media/contest-header.2180c982.svg",
+    "static/media/faq.svg": "/olymp/static/media/faq.45d5e422.svg",
+    "static/media/inspirer.svg": "/olymp/static/media/inspirer.00335f8e.svg",
+    "static/media/interester.svg": "/olymp/static/media/interester.7cd18ded.svg",
+    "static/media/logo.svg": "/olymp/static/media/logo.73c65287.svg",
+    "static/media/mailer.svg": "/olymp/static/media/mailer.968baa15.svg",
+    "static/media/notification.svg": "/olymp/static/media/notification.19f07efc.svg",
+    "static/media/notifier.svg": "/olymp/static/media/notifier.52fcc5af.svg",
+    "static/media/olymp-footer.svg": "/olymp/static/media/olymp-footer.ad9c995f.svg",
+    "static/media/olymp.svg": "/olymp/static/media/olymp.39430e7d.svg",
+    "static/media/overview.svg": "/olymp/static/media/overview.d787360d.svg",
+    "static/media/privacy.txt": "/olymp/static/media/privacy.d76473c8.txt",
+    "static/media/quick-questions.svg": "/olymp/static/media/quick-questions.cc8dd26b.svg",
+    "static/media/recommendations.svg": "/olymp/static/media/recommendations.382b0f7f.svg",
+    "static/media/reviewer.svg": "/olymp/static/media/reviewer.eb56da53.svg",
+    "static/media/reviews.svg": "/olymp/static/media/reviews.2138c50e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9cdbef16.js",
+    "static/js/2.9f2dfa67.chunk.js",
+    "static/css/main.70e3c631.chunk.css",
+    "static/js/main.986234fc.chunk.js"
+  ]
+}
