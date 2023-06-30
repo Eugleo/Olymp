@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e3753ed7c770a253e35084714e03f17a",
+    "revision": "77ac35ec21cbc50412a76b3beb529526",
     "url": "/olymp/index.html"
   },
   {
